@@ -1,0 +1,9 @@
+.containerV{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.containerV .recorded-video{
+    background-color: black;
+}

@@ -1,0 +1,26 @@
+.nav-bar{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: #cc9fff;
+    padding: 10px 0;
+    text-align: center;
+    z-index: 100;
+}
+
+.nav-bar .logo{
+    font-size: 2em;
+    font-weight: bold;
+}
+
+body{
+    padding-top: 97px;
+}
+
+.navbar-nav {
+    margin-left: 10px; /* Adjust this value as needed */
+}
+
+.nav-bar .container-fluid .sep .diff{
+    padding-right: 100px;
+}

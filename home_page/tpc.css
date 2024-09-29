@@ -1,0 +1,358 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body , html {
+    font-family: Arial, serif;
+    height: 100%;
+    width: 100%;
+    overflow-x: hidden;
+
+}
+
+.nav-link{
+    color: #EEEEEE;
+    font-size: 17px;
+}
+
+.nav-link:hover{
+    background-color: #EEEEEE;
+    opacity: 80%;
+}
+
+.main{
+    background: linear-gradient(to right, #4582d0, #0A2647);
+}
+
+
+.nav-pills {
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+    list-style: none;
+    gap: 15px;
+}
+
+.nav-item {
+    position: relative;
+}
+
+.nav-link {
+    display: block;
+    padding: 10px 15px;
+    text-decoration: none;
+    color: white;
+    transition: background-color 0.3s, color 0.3s, transform 0.3s;
+}
+
+.nav-link:hover {
+    background-color: #EEEEEE;
+    opacity: 80%;
+    color:  #0A2647;
+    transform: scale(1.1);
+}
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    background: linear-gradient(to right, #4582d0, #0A2647);
+    opacity: 10%;
+    list-style: none;
+    top: 100%;
+    left: 0;
+    min-width: 160px;
+    z-index: 1;
+    transition: opacity 0.3s;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.dropdown-menu .dropdown-item {
+    padding: 10px 15px;
+    text-decoration: none;
+    color: #EEEEEE;
+    display: block;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.dropdown-menu .dropdown-item:hover {
+    background-color: #EEEEEE;
+    color:  #0A2647;
+    transform: scale(1.1);
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+    opacity: 1;
+    visibility: visible;
+}
+
+@media (max-width: 768px) {
+    .nav-pills {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .dropdown-menu {
+        position: relative;
+    }
+}
+
+.upper{
+    margin-top: 100px;
+    width: 100vw;
+    height: 670px;
+     background-image: url("../Images/college.newpng.png");
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     color: #0A2647;
+ }
+ 
+ .upperinner{
+ text-align: center;
+ }
+
+ .upperinner{
+    text-align: left;
+ }
+ 
+ .sliders_head{
+    font-family: cardo;
+   font-optical-sizing: auto;
+   font-size: 50px;
+   font-weight: 600;
+   font-style: normal;
+ }
+ 
+.sliders_para{
+    font-size: 30px;
+    font-family: "Oswald", sans-serif;
+    font-weight: bold;
+    font-style: italic;
+}
+
+.abtsec{
+    padding-top: 100px;
+    padding-bottom: 100px;
+    margin-bottom: 0px;
+}
+
+.Aboutme{
+    padding: 40px;
+
+}
+
+.hhj{
+    margin-bottom: 50px;
+    text-align: center;
+    font-size: 50px;
+    color: #0A2647;
+    font-family: cardo;
+    font-weight: 600;
+}
+
+.information{
+    display: flex;
+    gap: 120px;
+    margin-left: 120px;
+    margin-right: 120px;
+}
+
+.pic{
+    height: 475px;
+    width: 374px;
+    border-radius: 20px;
+}
+
+.p1{
+    margin-bottom: 20px;
+    color: #0A2647;
+    font-family: "Raleway", sans-serif;
+    font-size: 15px;
+}
+
+.read_more{
+    font-family: "Raleway", sans-serif;
+    font-size: 20px;
+    height: 40px;
+    width: 130px;
+    text-align: center;
+    align-items: center;
+    transition: all 0.6s ease-in-out;
+
+}
+
+.read_more:hover{
+    width: 150px;
+    transition: all 0.6s ease-in-out;
+    border: 2px solid #0A2647;
+    opacity: 80%;
+    border-radius: 10px;
+    padding: 8px;
+    text-align: center;
+    height: 50px;
+    align-items: center;
+}
+
+.read_more_in{
+    color: #0A2647;
+}
+
+.read_more span{
+    font-size: 17px;
+}
+
+.companies{
+    object-fit: cover;
+    height: 16 00px;
+    width: 100vw;
+    background-image: url("../Images/bg10.png");
+}
+
+.companies_inner{
+    padding-top: 20px;
+}
+
+.companies_inner h1{
+    font-size:55px;
+    text-align: center;
+    margin-bottom: 30px;
+    font-family: cardo;
+    color: #0A2647;
+    text-transform: uppercase;
+}
+
+.slider {
+    width: 1000px;
+    height: 300px;
+    overflow: hidden;
+    position: relative;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.6);
+    border-radius: 5px;
+    margin-left: 130px;
+}
+
+
+.slides {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.slide {
+    min-width: 33.33%;
+    box-sizing: border-box;
+    transition: transform 0.5s ease-in-out;
+    padding: 20px;
+}
+
+.slide img {
+    width: 100%;
+    height: 200px;
+    object-fit: contain;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(21, 4, 130, 0.8);
+}
+
+.counters{
+    margin-top: 250px;
+    height: 500px;
+    width: 1000px;
+    background-color: white;
+    margin-left: 100px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: rgba(53, 53, 202, 0.25) 0px 50px 100px -20px, rgba(53, 53, 202, 0.25) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+    margin-bottom: 100px;
+}
+
+.counters p{
+    font-size: 20px;
+    color: #0A2647;
+    font-style: italic;
+}
+
+.counter_inner{
+    display: flex;
+    gap: 10px;
+    padding: 50px;
+    justify-content: space-between;
+    text-align: center;
+    color: #0A2647;
+}
+
+.counter_inner .logo{
+    font-size: 100px;
+}
+
+.footer{
+    background: linear-gradient(to top left, #2774fa, #0a1850);
+    margin-top: 50px;
+}
+
+.site-logo{
+    margin-bottom: 40px;
+}
+
+.site-logo h3{
+    color: white;
+}
+
+.site-logo a{
+    text-decoration: none;
+}
+
+.footer-text{
+    color: aliceblue;
+}
+
+.more-text{
+    color: whitesmoke;
+    padding: 10px;
+    border-radius: 5px;
+    text-decoration: none;
+    border: 1px solid rgb(206, 235, 248);
+    transition: all 0.5s ease-in-out;
+}
+
+.more-text:hover{
+    background-color: rgb(206, 235, 248);
+    color: darkblue;
+    padding: 15px;
+    transition: all 0.3s ease-in-out;
+}
+
+.widget h3{
+    color: white;
+    margin-bottom: 30px;
+}
+
+.widget ul li a{
+    color: rgb(206, 235, 248);
+    text-decoration: none;
+}
+
+.widget ul li{
+    list-style-type: none;
+}
+
+#btnd{
+    border: 1px solid lightblue;
+    width: 100px;
+    text-align: center;
+    padding: 10px;
+    border-radius: 5px;
+    color: rgb(206, 235, 248);
+}
+
+#btnd:hover{
+    width: 120px;
+    background-color: rgb(206, 235, 248);
+    color: #0a1850;
+    transition: all 0.5s ease-in-out;
+}
+

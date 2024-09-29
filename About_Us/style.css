@@ -1,0 +1,232 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* font-family: 'Montserrat', sans-serif; */
+}
+
+.nav-link{
+    color: #EEEEEE;
+    font-size: 17px;
+}
+
+.nav-link:hover{
+    background-color: #EEEEEE;
+    opacity: 80%;
+}
+
+.main{
+    background: linear-gradient(to right, #4582d0, #0A2647);
+}
+
+
+.nav-pills {
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+    list-style: none;
+    gap: 15px;
+}
+
+.nav-item {
+    position: relative;
+}
+
+.nav-link {
+    display: block;
+    padding: 10px 15px;
+    text-decoration: none;
+    color: white;
+    transition: background-color 0.3s, color 0.3s, transform 0.3s;
+}
+
+.nav-link:hover {
+    background-color: #EEEEEE;
+    opacity: 80%;
+    color:  #0A2647;
+    transform: scale(1.1);
+}
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    background: linear-gradient(to right, #4582d0, #0A2647);
+    opacity: 10%;
+    list-style: none;
+    top: 100%;
+    left: 0;
+    min-width: 160px;
+    z-index: 1;
+    transition: opacity 0.3s;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.dropdown-menu .dropdown-item {
+    padding: 10px 15px;
+    text-decoration: none;
+    color: #EEEEEE;
+    display: block;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.dropdown-menu .dropdown-item:hover {
+    background-color: #EEEEEE;
+    color:  #0A2647;
+    transform: scale(1.1);
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+    opacity: 1;
+    visibility: visible;
+}
+
+@media (max-width: 768px) {
+    .nav-pills {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .dropdown-menu {
+        position: relative;
+    }
+}
+
+.accreditation{
+    margin-top: 100px;
+    height: 40vh;
+    width: 100%;
+    background-color: #EEF3F5;
+    align-content: center;
+}
+
+.accreditation h1{
+    text-align: center;
+}
+
+.accreditation-box{
+    text-align: center;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+.box{
+    height: 120px;
+    width: 300px;
+    border: 2px solid rgba(0, 0, 0, 0.207);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.box h2{
+    font-size: 30px;
+    font-family: 'Montserrat', sans-serif;
+    color: rgb(43, 101, 195);
+}
+.box p{
+    font-size: 20px;
+}
+
+.box a{
+    text-decoration: none;
+    color: black;
+}
+.box a:hover{
+    color: silver;
+}
+
+.abtButton{
+    text-align: center;
+    padding: 0;
+    width: 180px;
+    transition: all 0.5s ease-in-out;
+}
+
+.abtButton:hover{
+    width: 250px;
+    text-align: center;
+    border: 2px solid rgb(206, 235, 248);
+    background-color: rgb(206, 235, 248);
+    border-radius: 10px;
+    transition: all 0.5s ease-in-out;
+}
+
+.abt-sec{
+    box-shadow: 0px 0px 10px 10px rgba(14, 87, 182, 0.323);
+}
+
+.footer{
+    background: linear-gradient(to top left, #2774fa, #0a1850);
+}
+
+.site-logo{
+    margin-bottom: 40px;
+}
+
+.site-logo h3{
+    color: white;
+}
+
+.site-logo a{
+    text-decoration: none;
+}
+
+.footer-text{
+    color: aliceblue;
+}
+
+.more-text{
+    color: whitesmoke;
+    padding: 10px;
+    border-radius: 5px;
+    text-decoration: none;
+    border: 1px solid rgb(206, 235, 248);
+    transition: all 0.5s ease-in-out;
+}
+
+.more-text:hover{
+    background-color: rgb(206, 235, 248);
+    color: darkblue;
+    padding: 15px;
+    transition: all 0.3s ease-in-out;
+}
+
+.widget h3{
+    color: white;
+    margin-bottom: 30px;
+}
+
+.widget ul li a{
+    color: rgb(206, 235, 248);
+    text-decoration: none;
+}
+
+.widget ul li{
+    list-style-type: none;
+}
+
+#btnd{
+    border: 1px solid lightblue;
+    width: 100px;
+    text-align: center;
+    padding: 10px;
+    border-radius: 5px;
+    color: rgb(206, 235, 248);
+}
+
+#btnd:hover{
+    width: 120px;
+    background-color: rgb(206, 235, 248);
+    color: #0a1850;
+    transition: all 0.5s ease-in-out;
+}
+
